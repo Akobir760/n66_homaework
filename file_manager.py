@@ -16,6 +16,6 @@ def write_data(file_name: str, data:list) -> None:
 
 
 def append_data(file_name, data):
-    with open(file_name, mode="a", encoding="UTF-8") as file:
+    with open(file_name, mode="a",newline="", encoding="UTF-8") as file:
         writer = csv.writer(file)
         writer.writerow(data)
