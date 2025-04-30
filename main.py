@@ -1,3 +1,7 @@
+from functions import add, sub, mult, div
+
+
+
 def main():
     print("""
 1. add numbers
@@ -7,18 +11,20 @@ def main():
 5. exit""")
     choice = int(input("Enter your choice: "))
     if choice == 1:
-        pass
+        add()
     elif choice == 2:
-        pass
+        sub()
     elif choice ==3:
-        pass
+        mult()
     elif choice == 4:
-        pass
+        div()
     elif choice == 5:
-        pass
+        print("Exit")
+        return
     else:
         print("Invalid choice!")
         return main
+    main()
     
 
 if __name__ == "__main__":
